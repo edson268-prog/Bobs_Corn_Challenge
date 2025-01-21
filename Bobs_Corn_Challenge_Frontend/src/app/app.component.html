@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <span>Bob's Online Page</span>
+</mat-toolbar>
+<div class="menu-container">
+  <button mat-raised-button color="accent" (click)="navigateTo('store')">
+    Store
+  </button>
+  <button mat-raised-button color="warn" (click)="navigateTo('history')">
+    Purchase History
+  </button>
+</div>
+
+<!-- <app-corn-store></app-corn-store> -->
+
+<router-outlet></router-outlet>

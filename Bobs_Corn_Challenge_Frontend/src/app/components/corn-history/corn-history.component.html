@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="results">
+      <h1>
+        🌽 Look how much corn you have bought 🌽
+      </h1>
+  
+      <div *ngIf="stats" class="grid">
+        <div>
+          <p>Total Purchases</p>
+          <p>{{stats.totalPurchases}}</p>
+        </div>
+        <div>
+          <p>Successful Purchases</p>
+          <p>{{stats.successfulPurchases}}</p>
+        </div>
+        <div>
+          <p>Last Purchase</p>
+          <p>
+            {{stats.lastPurchaseTime | date:'medium'}}
+          </p>
+        </div>
+      </div>
+  
+      <div>
+        <h2>Purchase History</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>
+                Date
+              </th>
+              <th>
+                Status
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let purchase of purchaseHistory">
+              <td>
+                {{purchase.purchaseTime | date:'medium'}}
+              </td>
+              <td>
+                <span [class]="purchase.isSuccessful ? 'text-green' : 'text-red'">
+                  {{purchase.isSuccessful ? '✅ Successful' : '❌ Failed'}}
+                </span>
+              </td>
+            </tr>
+            <tr *ngIf="purchaseHistory.length === 0">
+              <td colspan="2">
+                No hay compras registradas
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

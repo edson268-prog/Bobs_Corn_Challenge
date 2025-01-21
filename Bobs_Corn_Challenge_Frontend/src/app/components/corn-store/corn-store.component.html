@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="purchase">
+        <h1>
+            🌽 Bob's Corn Store 🌽
+        </h1>
+
+        <div>
+            <p>Your Customer ID is: <span class="text-blue">{{clientId}}</span></p>
+        </div>
+
+        <div class="center">
+            <button (click)="purchaseCorn()" [disabled]="loading">
+                {{ loading ? 'Processing...' : 'Buy Corn!' }}
+            </button>
+        </div>
+
+        <div class="mb-8">
+            <div *ngIf="error" class="text-red">
+                {{ error }}
+            </div>
+            <div *ngIf="success" class="text-green">
+                {{ success }}
+            </div>
+        </div>
+    </div>
+</div>

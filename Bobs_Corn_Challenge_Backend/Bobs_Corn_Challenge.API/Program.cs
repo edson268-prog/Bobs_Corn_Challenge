@@ -31,6 +31,9 @@ app.UseAuthorization();
 
 app.UseMiddleware<ExceptionMiddleware>();
 
+// ALLOW ANY CONECCTION, HAD PROBLEMS WHEN I CONSUME THE API FROM ANGULAR
+app.UseCors(c => c.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+
 app.MapControllers();
 
 app.Run();

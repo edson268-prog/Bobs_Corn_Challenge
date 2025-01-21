@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fef9f3;
+    min-height: 15vh;
+    padding: 16px;
+  }
+  
+  .purchase {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #d97706;
+  }
+  
+  button {
+    background-color: #f59e0b;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #eab308;
+    transform: translateY(-2px);
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  .text-red,
+  .text-green {
+    border-radius: 8px;
+  }
+
+  .text-blue{
+    color: blue;
+    font-size: large;
+  }
+
+  .text-green{
+    color: green;
+  }
+
+  .text-red{
+    color: red;
+  }
+
+  .center{
+    text-align: center;
+  }
