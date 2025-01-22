@@ -20,7 +20,7 @@ namespace Bobs_Corn_Challenge.Services.Implementations
             await _cornRepository.RegisterPurchaseAsync(clientId, canPurchase);
 
             return canPurchase
-                ? (true, "¡Successful purchase! 🌽")
+                ? (true, "Successful purchase! 🌽")
                 : (false, "You must wait 1 minute between purchases");
         }
 

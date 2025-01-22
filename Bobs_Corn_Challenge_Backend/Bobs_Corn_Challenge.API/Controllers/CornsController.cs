@@ -2,7 +2,6 @@
 using Bobs_Corn_Challenge.Entities;
 using Bobs_Corn_Challenge.Services.Interfaces;
 using Bobs_Corn_Challenge.API.Exceptions;
-using static Bobs_Corn_Challenge.API.Middleware.ExceptionMiddleware;
 using Bobs_Corn_Challenge.Entities.dto.Response;
 using Bobs_Corn_Challenge.Entities.dto.Request;
 using Azure.Core;

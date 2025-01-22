@@ -20,7 +20,6 @@
     <ProjectReference Include="..\Bobs_Corn_Challenge.DataAccess\Bobs_Corn_Challenge.DataAccess.csproj" />
     <ProjectReference Include="..\Bobs_Corn_Challenge.Entities\Bobs_Corn_Challenge.Entities.csproj" />
     <ProjectReference Include="..\Bobs_Corn_Challenge.Services\Bobs_Corn_Challenge.Services.csproj" />
-    <ProjectReference Include="..\Bobs_Corn_Challenge.UnitTest\Bobs_Corn_Challenge.UnitTest.csproj" />
   </ItemGroup>
 
 </Project>
